@@ -34,9 +34,9 @@ def main():
 
     if choice == "Home":
         st.header('**Welcome !**')
-        #video_file = open("https://github.com/RashRAJ/EDA_APP/blob/main/Octo.mp4", 'rb')
-        #video_bytes = video_file.read()
-        st.video("Octo.mp4", format='video/mp4', start_time = 0)
+        video_file = open("Octo.mp4", 'rb')
+        video_bytes = video_file.read()
+        st.video(video_bytes)
 
     elif choice == 'Pandas Profile':
         st.header('**Automated EDA with pandas profile**')
